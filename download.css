@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(45deg, #1ebbcc, #ab5cec, #416ac4, #582b7e);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: gradient 15s ease infinite;
+    background-size: 300% 300%;
+
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff7e5f;
+}
+
+.download-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.download-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.download-row {
+    flex-direction: row;
+    flex: 1;
+    display: flex;
+}
+
+.download-option {
+        display: flex;
+        align-items: center;
+        margin: 30px 30px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .download-option:hover {
+        transform: scale(1.05);
+    }
+
+    .download-option-logo {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        margin-left: 15px;
+    }
+
+    .download-option-content {
+        flex: 1;
+        text-align: left;
+    }
+
+    .download-option h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #ff7e5f;
+    }
+
+    .download-option p {
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .version-info {
+        font-size: 0.9em;
+        color: #ddd;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .download-count {
+        font-size: 0.8em;
+        color: #ddd;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .download-button {
+        display: inline-block;
+        background-color: #ff7e5f;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 1em;
+        transition: background-color 0.3s;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .download-button:hover {
+        background-color: #fdab6d;
+    }
+
+    .download-button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    .download-button:disabled:hover {
+        background-color: #ccc;
+    }
+
+    .logo-div {
+        flex: 0;
+    }
+
+.github-link {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 30px;
+    background-color: #24292e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.github-link:hover {
+    background-color: #ff7e5f;
+}
+
+.github-link::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+.github-link:hover::before {
+    left: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.linux {
+    opacity: 0.5;
+}
+
+.windows {
+    z-index: 999;
+}
+@media only screen and (max-width: 991px) {
+    .download-row {
+    flex-direction: column;
+}
+}
