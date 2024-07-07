@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(45deg, #1ebbcc, #ab5cec, #416ac4, #582b7e);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: gradient 15s ease infinite;
+    background-size: 300% 300%;
+
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    height: 10vh;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header img {
+    height: 8vh;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-left:110%;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff7e5f;
+}
+
+.docs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 20px;
+    backdrop-filter: blur(10px);
+    position: relative; /* Needed for the slanted box */
+    overflow: hidden; /* Ensure content within slanted box doesn't overflow */
+}
+
+
+/* Your existing styles remain unchanged; here's the added part */
+
+.docs iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .features iframe {
+        height: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .features iframe {
+        height: 400px;
+    }
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-a {
+    text-decoration: none;
+}
