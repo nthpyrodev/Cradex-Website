@@ -184,11 +184,55 @@ header nav ul li a:hover {
         flex: 0;
     }
 
+
+
+
+    .button-container {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .hover-info {
+        position: absolute;
+        bottom: -180%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ff7e5f;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.9em;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+        z-index: 1000;
+    }
+    
+    .hover-info::after {
+        content: '';
+        position: absolute;
+        top: -25%;
+        left: 50%;
+        margin-left: -10px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent #ff7e5f transparent;
+    }
+    
+    .button-container:hover .hover-info {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+
+
 .github-link {
     display: inline-block;
     margin-top: 40px;
     padding: 15px 30px;
-    background-color: #24292e;
+    background-color: #2e3236;
     color: #fff;
     text-decoration: none;
     border-radius: 30px;
@@ -224,6 +268,10 @@ footer {
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-a {
+    text-decoration: none;
 }
 
 .linux {
