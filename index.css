@@ -31,7 +31,6 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 20px;
     margin: 20px;
@@ -40,6 +39,7 @@ header {
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    height: 10vh;
 }
 
 header .logo {
@@ -47,9 +47,14 @@ header .logo {
     font-weight: bold;
 }
 
+header img {
+    height: 8vh;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
+    margin-left:110%;
 }
 
 header nav ul li {
