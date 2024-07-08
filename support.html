@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cradex - Support</title>
+    <link rel="icon" type="image/ico" href="/Cradex-Website/imgs/logo.ico"/>
+    <link rel="stylesheet" href="support.css">
+</head>
+<body>
+    <header>
+        <img src="/Cradex-Website/imgs/logo.png" alt="Cradex Logo">
+        <div class="logo">Cradex Game Engine</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="download.html">Download</a></li>
+                <li><a target="_blank" href="documentation.html">Documentation</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="support-section">
+            <div class="form-container">
+                <h1>Contact Us</h1>
+                
+                <form class="contact-form" id="contactForm" method="post" action="form.php">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+                <div id="formResponse" class="form-response"></div>
+            </div>
+            <div class="alternative-container">
+                <h2>Alternative Contact</h2>
+                <br>
+                <a href="https://discord.gg/zYJUmfudr3" target="_blank" class="discord-button">Join Discord</a>
+                <br><br>
+                <a href="mailto:example:example.com" class="mailto-button">Email: Coming soon!</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <p>
+                    <a class="footer-a" href="https://nicodevportfolio.com">Website built by NicoDev</a>
+                </p>
+                <br>
+                <p>
+                    <a class="footer-a" href="https://github.com/nthpyrodev/Cradex-Website">View Website Source Code</a>
+                </p>
+            </div>
+            <div class="footer-item">
+                <p>&copy; 2024 Cradex. All rights reserved.</p>
+                <br>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-item">
+                <ul class="footer-links">
+                    <li><a class="footer-a" href="#">Terms of Use</a></li>
+                    <li><a class="footer-a" href="#">Privacy Policy</a></li>
+                    <li><a class="footer-a" href="support.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="support.js"></script>
+</body>
+</html>
