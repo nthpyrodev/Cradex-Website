@@ -347,3 +347,52 @@ footer {
 .social-link i {
     font-size: 1.5em;
 }
+
+
+
+@media only screen and (max-width: 991px) {
+    s {
+        display: none;
+    }
+
+
+    .features {
+        display: block;
+        justify-content: space-around;
+    }
+
+    .feature-box {
+        text-align: center;
+        width: auto;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .features::before {
+        display: none;
+    }
+
+    .main-container .editor-image {
+        width: 85vw;
+        height: auto;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: 0.2s ease;
+    }
+
+    .main-container .editor-image:hover {
+        height: auto;
+    }
+
+    header nav ul li:nth-child(2) {
+        display: none;
+    }
+
+    header nav ul li:nth-child(1) {
+        display: none;
+    }
+
+    .footer-links {
+        display: none;
+    }
+}
