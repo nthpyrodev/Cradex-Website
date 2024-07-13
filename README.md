@@ -1,7 +1,7 @@
 # Cradex-Website
 Website for Cradex Game Engine
 
-Thanks for stopping by to check out the website for Cradex. It is in it's last stages of development, before it is finished!
+Thanks for stopping by to check out the website for Cradex.
 
 You can check it out here: https://nthpyrodev.github.io/Cradex-Website/
 
